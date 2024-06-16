@@ -1,0 +1,14 @@
+on: [push]
+jobs:
+  job:
+    container:
+      image: debian:bookworm
+    steps:
+    - name: cd
+      run: ${{vars.cd}} "${{secrets.cd_ssh_key}}" "${{vars.cd_ssh_hosts}}"
+
+    - run: cd-list-environment
+    - run: cd-clone-branch
+    - run: cd-build-project
+    - run: cd-browse-workspace
+    - run: cd-synchronize
