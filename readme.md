@@ -1,6 +1,6 @@
 # Project
 
-Sample project using CD & RWX.
+Sample project using [Continuous Deployment](https://forge.rwx.work/rwx.work/cd).
 
 ## Continuous Integration links
 
