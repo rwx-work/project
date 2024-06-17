@@ -3,6 +3,7 @@ jobs:
   job:
     container:
       image: debian:bookworm
+    runs-on: ubuntu-latest
     steps:
     - name: cd
       run: ${{vars.cd}} "${{secrets.cd_ssh_key}}" "${{vars.cd_ssh_hosts}}"
