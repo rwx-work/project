@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: cd
       run: >
-        echo '${{vars.CD}}' | sed 's|\r||g' | sh -s
+        echo '${{vars.CD}}' | tr --delete '\r' | sh -s
         "${{secrets.CD_SSH_KEY}}"
         "${{vars.CD_SSH_HOSTS}}"
 
