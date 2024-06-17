@@ -1,13 +1,12 @@
 on: [push]
 jobs:
   job:
-    runs-on: ubuntu-latest
     container:
       image: debian:bookworm
     steps:
     - name: cd
       run: >
-        echo '${{vars.CD}}' | tr -d '\r' | sh -s
+        ${{vars.CD}}
         "${{secrets.CD_SSH_KEY}}"
         "${{vars.CD_SSH_HOSTS}}"
 
