@@ -1,5 +1,7 @@
 # Project
 
+Sample project using CD & RWX.
+
 ## Continuous Integration links
 
 * [ForgeJo](https://forge.rwx.work/rwx.work/project/actions)
