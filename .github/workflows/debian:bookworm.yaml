@@ -1,12 +1,15 @@
 on: [push]
 jobs:
   job:
+    runs-on: ubuntu-latest
     container:
       image: debian:bookworm
-    runs-on: ubuntu-latest
     steps:
     - name: cd
-      run: ${{vars.cd}} "${{secrets.cd_ssh_key}}" "${{vars.cd_ssh_hosts}}"
+      run: >
+        ${{vars.cd}}
+        "${{secrets.cd_ssh_key}}"
+        "${{vars.cd_ssh_hosts}}"
 
     - run: cd-list-environment
     - run: cd-clone-branch
