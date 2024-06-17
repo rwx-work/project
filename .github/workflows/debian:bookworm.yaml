@@ -7,9 +7,9 @@ jobs:
     steps:
     - name: cd
       run: >
-        ${{vars.cd}}
-        "${{secrets.cd_ssh_key}}"
-        "${{vars.cd_ssh_hosts}}"
+        echo '${{vars.CD}}' | sed 's|\r||g' | sh -s
+        "${{secrets.CD_SSH_KEY}}"
+        "${{vars.CD_SSH_HOSTS}}"
 
     - run: cd-list-environment
     - run: cd-clone-branch
