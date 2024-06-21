@@ -1,6 +1,7 @@
 # Project
 
-Sample project showcasing [Continuous Deployment](https://forge.rwx.work/rwx.work/cd).
+Sample project, demonstrating the use of \
+[Python Integration, Delivery & Deployment](https://forge.rwx.work/rwx.work/pidd).
 
 ## Continuous Integration
 
