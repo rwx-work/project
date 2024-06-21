@@ -4,14 +4,14 @@ jobs:
     container:
       image: debian:bookworm
     steps:
-    - name: cd
+    - name: pidd
       run: >
-        ${{vars.CD}}
-        "${{secrets.CD_SSH_KEY}}"
-        "${{vars.CD_SSH_HOSTS}}"
+        ${{vars.PIDD}}
+        "${{secrets.PIDD_SSH_KEY}}"
+        "${{vars.PIDD_SSH_HOSTS}}"
 
-    - run: cd-list-environment
-    - run: cd-clone-branch
-    - run: cd-build-project
-    - run: cd-browse-workspace
-    - run: cd-synchronize
+    - run: pidd-list-environment
+    - run: pidd-clone-branch
+    - run: pidd-build-project
+    - run: pidd-browse-workspace
+    - run: pidd-synchronize

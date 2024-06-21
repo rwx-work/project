@@ -2,11 +2,11 @@ image: debian:bookworm
 job:
   script:
   - >
-    sh ${CD}
-    ${CD_SSH_KEY}
-    ${CD_SSH_HOSTS}
+    sh ${PIDD}
+    ${PIDD_SSH_KEY}
+    ${PIDD_SSH_HOSTS}
 
-  - cd-list-environment
-  - cd-clone-branch
-  - cd-build-project
-  - cd-browse-workspace
+  - pidd-list-environment
+  - pidd-clone-branch
+  - pidd-build-project
+  - pidd-browse-workspace
