@@ -6,6 +6,9 @@ jobs:
       image: debian:bookworm
     steps:
     - name: pidd
+      env:
+        PIDD_GIT_MAIN: ${{vars.PIDD_GIT_MAIN}}
+        PIDD_GIT_ROOT: ${{vars.PIDD_GIT_ROOT}}
       run: >
         echo '${{vars.PIDD}}' | tr -d '\r' | sh -s
         "${{secrets.PIDD_SSH_KEY}}"
