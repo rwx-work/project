@@ -5,17 +5,17 @@ jobs:
     container:
       image: debian:bookworm
     steps:
-    - name: pidd
+    - name: spcd
       env:
-        PIDD_GIT_MAIN: ${{vars.PIDD_GIT_MAIN}}
-        PIDD_GIT_ROOT: ${{vars.PIDD_GIT_ROOT}}
+        SPCD_GIT_MAIN: ${{vars.SPCD_GIT_MAIN}}
+        SPCD_GIT_ROOT: ${{vars.SPCD_GIT_ROOT}}
       run: >
-        echo '${{vars.PIDD}}' | tr -d '\r' | sh -s
-        "${{secrets.PIDD_SSH_KEY}}"
-        "${{vars.PIDD_SSH_HOSTS}}"
+        echo '${{vars.SPCD}}' | tr -d '\r' | sh -s
+        "${{secrets.SPCD_SSH_KEY}}"
+        "${{vars.SPCD_SSH_HOSTS}}"
 
-    - run: pidd-list-environment
-    - run: pidd-clone-branch
-    - run: pidd-build-project
-    - run: pidd-browse-workspace
-    - run: pidd-synchronize
+    - run: spcd-list-environment
+    - run: spcd-clone-branch
+    - run: spcd-build-project
+    - run: spcd-browse-workspace
+    - run: spcd-synchronize
