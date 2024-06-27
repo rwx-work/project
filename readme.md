@@ -1,7 +1,7 @@
 # Project
 
 Sample project, demonstrating the use of \
-[Python Integration, Delivery & Deployment](https://forge.rwx.work/rwx.work/pidd).
+[Shell to Python Continuous Deployment](https://forge.rwx.work/rwx.work/spcd).
 
 ## Continuous Integration
 
