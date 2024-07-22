@@ -1,4 +1,4 @@
-image: debian:bookworm
+image: ${DOCKER:-docker.io}/debian:bookworm
 job:
   script:
   - >
