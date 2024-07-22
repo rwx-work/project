@@ -2,7 +2,7 @@ on: [push]
 jobs:
   job:
     container:
-      image: ${{vars.DOCKER||docker.io/}}debian:bookworm
+      image: ${{vars.DOCKER||docker.io}}/debian:bookworm
     steps:
     - name: spcd
       env:
