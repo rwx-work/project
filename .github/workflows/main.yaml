@@ -3,7 +3,7 @@ jobs:
   job:
     runs-on: ubuntu-latest
     container:
-      image: debian:bookworm
+      image: ${{vars.DOCKER||'docker.io'}}/debian:bookworm
     steps:
     - name: spcd
       env:
