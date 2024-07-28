@@ -7,6 +7,5 @@ job:
     ${SPCD_SSH_HOSTS}
 
   - spcd-list-environment
-  - spcd-clone-branch
   - spcd-build-project
   - spcd-browse-workspace
