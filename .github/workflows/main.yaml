@@ -10,6 +10,7 @@ jobs:
         SPCD_GIT_MAIN: ${{vars.SPCD_GIT_MAIN}}
         SPCD_GIT_ROOT: ${{vars.SPCD_GIT_ROOT}}
         SPCD_SSH_HOSTS: ${{vars.SPCD_SSH_HOSTS}}
+        SPCD_SSH_KEY: ${{secrets.SPCD_SSH_KEY}}
       run: echo '${{vars.SPCD}}' | tr -d '\r' | sh -s
 
     - run: spcd-list-environment
