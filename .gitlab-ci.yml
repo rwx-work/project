@@ -3,6 +3,5 @@ job:
   script:
   - sh ${SPCD}
 
-  - spcd-list-environment
   - spcd-build-project
   - spcd-browse-workspace
