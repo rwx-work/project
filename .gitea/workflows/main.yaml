@@ -6,10 +6,9 @@ jobs:
     steps:
     - name: spcd
       env:
-        SPCD_SSH_HOSTS: ${{vars.SPCD_SSH_HOSTS}}
-        SPCD_SSH_KEY: ${{secrets.SPCD_SSH_KEY}}
+        SPCD_GIT_MAIN: ${{vars.SPCD_GIT_MAIN}}
+        SPCD_GIT_ROOT: ${{vars.SPCD_GIT_ROOT}}
       run: ${{vars.SPCD}}
 
     - run: spcd-build-project
     - run: spcd-browse-workspace
-    - run: spcd-synchronize
