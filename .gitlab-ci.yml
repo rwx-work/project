@@ -1,10 +1,7 @@
 image: ${DOCKER}debian:bookworm
 job:
   script:
-  - >
-    sh ${SPCD}
-    ${SPCD_SSH_KEY}
-    ${SPCD_SSH_HOSTS}
+  - sh ${SPCD}
 
   - spcd-list-environment
   - spcd-build-project

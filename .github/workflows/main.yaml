@@ -9,10 +9,7 @@ jobs:
       env:
         SPCD_GIT_MAIN: ${{vars.SPCD_GIT_MAIN}}
         SPCD_GIT_ROOT: ${{vars.SPCD_GIT_ROOT}}
-      run: >
-        echo '${{vars.SPCD}}' | tr -d '\r' | sh -s
-        "${{secrets.SPCD_SSH_KEY}}"
-        "${{vars.SPCD_SSH_HOSTS}}"
+      run: echo '${{vars.SPCD}}' | tr -d '\r' | sh -s
 
     - run: spcd-list-environment
     - run: spcd-build-project
