@@ -7,6 +7,7 @@ jobs:
     steps:
     - name: spcd
       env:
+        SPCD: ${{vars.SPCD}}
         SPCD_GIT_MAIN: ${{vars.SPCD_GIT_MAIN}}
         SPCD_GIT_ROOT: ${{vars.SPCD_GIT_ROOT}}
       run: echo '${{vars.SPCD}}' | tr -d '\r' | sh -s

@@ -6,6 +6,7 @@ jobs:
     steps:
     - name: spcd
       env:
+        SPCD: ${{vars.SPCD}}
         SPCD_SSH_HOSTS: ${{vars.SPCD_SSH_HOSTS}}
         SPCD_SSH_KEY: ${{secrets.SPCD_SSH_KEY}}
       run: ${{vars.SPCD}}
