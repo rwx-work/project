@@ -1,7 +1,7 @@
 image: ${DOCKER}debian:bookworm
 job:
   script:
-  - ${SPCD}
+  - echo ${SPCD} | sh -s
 
   - spcd-build-project
   - spcd-browse-workspace
