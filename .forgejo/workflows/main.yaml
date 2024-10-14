@@ -11,6 +11,7 @@ jobs:
         SPCD_SSH_KEY: ${{secrets.SPCD_SSH_KEY}}
       run: ${{vars.SPCD}}
 
+    - run: spcd-check-project
     - run: spcd-build-project
     - run: spcd-browse-workspace
     - run: spcd-synchronize
