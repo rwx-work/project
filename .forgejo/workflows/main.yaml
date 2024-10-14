@@ -15,3 +15,5 @@ jobs:
     - run: spcd-build-project
     - run: spcd-browse-workspace
     - uses: ./actions/synchronize
+      with:
+        source: output
