@@ -14,4 +14,4 @@ jobs:
     - run: spcd-check-project
     - run: spcd-build-project
     - run: spcd-browse-workspace
-    - run: spcd-synchronize
+    - uses: ./actions/synchronize
