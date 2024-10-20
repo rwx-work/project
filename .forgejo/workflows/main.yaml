@@ -16,8 +16,14 @@ jobs:
     - run: spcd-browse-workspace
     - uses: ./act/action
       with:
-        arg-1: one
-        arg_2: two
+        arg_1: string
+        arg_2:
+        - one
+        - two
+        arg_3:
+        - a: x
+        - b: y
+        - c: z
     - uses: ./act/synchronize
       with:
         source: output
