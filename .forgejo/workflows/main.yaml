@@ -18,8 +18,17 @@ jobs:
     - uses: ./act/action
       with:
         arg_1: '"one"'
-        arg_2: '["one", "two"]'
-        arg_3: '{"one": 1, "two": 2, "three": 3}'
+        arg_2: >
+          [
+          "one",
+          "two",
+          ]
+        arg_3: >
+          {
+          "one": 1,
+          "two": 2,
+          "three": 3,
+          }
     - uses: ./act/synchronize
       with:
         source: output
