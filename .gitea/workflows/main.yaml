@@ -7,8 +7,8 @@ jobs:
     - name: spcd
       env:
         SPCD: ${{vars.SPCD}}
-        SPCD_GIT_MAIN: ${{vars.SPCD_GIT_MAIN}}
-        SPCD_GIT_ROOT: ${{vars.SPCD_GIT_ROOT}}
+        SPCD_GIT_RWX: ${{vars.SPCD_GIT_RWX}}
+        SPCD_GIT_SPCD: ${{vars.SPCD_GIT_SPCD}}
       run: ${{vars.SPCD}}
 
     - run: spcd-build-project
