@@ -3,7 +3,7 @@ jobs:
   job:
     runs-on: ubuntu-latest
     container:
-      image: ${{vars.DOCKER}}debian:bookworm
+      image: ${{vars.DOCKER}}debian:trixie
     steps:
     - name: spcd
       env:
