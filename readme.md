@@ -17,8 +17,7 @@ Sample project, demonstrating the use of \
   * 5.2 [Repo](#where-repo)
   * 5.3 [Site](#where-site)
 * 6 [When](#when)
-  * 6.1 [Release tasks](#when-release)
-  * 6.2 [Roadmap tasks](#when-roadmap)
+  * 6.1 [Tasks](#when-tasks)
 
 ---
 
@@ -95,8 +94,4 @@ Sample project, demonstrating the use of \
 
 ---
 
-### 6.1 [Release tasks](#when) {#when-release}
-
----
-
-### 6.2 [Further tasks](#when) {#when-further}
+### 6.1 [Tasks](#when) {#when-tasks}
