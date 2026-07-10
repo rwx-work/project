@@ -8,4 +8,4 @@ from rwx.fs import make_directory, write
 if __name__ == "__main__":
     out = Path(__file__).parent / "out" / "web"
     make_directory(out)
-    write(out / "index.html", "prj.rwx.work")
+    write(out / "index.html", "project.rwx.work")
