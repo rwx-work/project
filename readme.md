@@ -32,6 +32,8 @@ Sample project, demonstrating the use of \
 
 ## 3 [What](#toc) {#what}
 
+---
+
 ### 3.1 [Features](#what) {#what-features}
 
 ---
@@ -44,6 +46,8 @@ Sample project, demonstrating the use of \
 
 ## 5 [Where](#toc) {#where}
 
+---
+
 ### 5.1 [Chat](#where) {#where-chat}
 
 #### ATProto
@@ -54,6 +58,8 @@ Sample project, demonstrating the use of \
 #### IRC
 
 * [Libera](ircs://irc.libera.chat/#project)
+
+---
 
 ### 5.2 [Repo](#where) {#where-repo}
 
@@ -77,6 +83,8 @@ Sample project, demonstrating the use of \
 * [github @ github.com / rwx-work](https://github.com/organizations/rwx-work/settings/variables/actions)
 * [gitlab @ gitlab.com / rwx.work](https://gitlab.com/groups/rwx.work/-/settings/ci_cd)
 
+---
+
 ### 5.3 [Site](#where) {#where-site}
 
 * [Web](https://project.rwx.work)
@@ -85,6 +93,10 @@ Sample project, demonstrating the use of \
 
 ## 6 [When](#toc) {#when}
 
+---
+
 ### 6.1 [Release tasks](#when) {#when-release}
+
+---
 
 ### 6.2 [Further tasks](#when) {#when-further}
